@@ -1,4 +1,345 @@
-h1 {
-    font-size: 24px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #ddd;
+  body {
+  margin: 0;
+  font-family:"M PLUS Rounded 1c",Verdana, sans-serif;
+  background-color: rgb(180, 65, 71);
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+ul {
+  display:flex;
+justify-content: center;
+}
+  .onlySP {
+  display: none;
+}
+
+a {
+  color:#ffffff;
+  text-decoration:underline;
+  }
+
+  header {
+  height: 450px;
+  background: url(../img/Portfolio1.png) no-repeat left center/cover;
+  background-size: 500x;
+  width: 1300px;
+  height: 400px;
+  border: 2px solid;
+  margin:0 auto;
+}
+ 
+ section {
+  text-align: center;
+}
+
+ .innerWrap {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+  section h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+  .innerWrap{
+  margin-top: 20px;
+}
+  .innerWrap img {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+  .innerWrap .Text {
+  margin: auto;
+  padding: 0;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ .innerWrap .Text h2 {
+  font-size: 30px;
+  font-weight: bold
+}
+
+  main .PC  img {
+  border: 2px solid;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+  main .namecard  img {
+    border: 2px solid;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+  .contact img{
+  border: 2px solid;
+  width: 70%; 
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+ main h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold
+} 
+
+.Link {
+    display: flex;
+    justify-content: space-around;
+    width: 720px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    list-style:none;
+}
+
+  main{
+text-align: center;
+}
+
+.formSec {
+  background-color: #ffffff;
+  padding-bottom: 60px;
+}
+
+ li {
+  list-style:none;/*デフォルトの指定を解除*/
+  display:inline-block;/*liをインラインブロック要素に*/
+  padding:10px 0; /*縦の余白を指定*/
+  width:400px;/*幅を指定*/
+  height:400px;/*高さを指定*/
+  vertical-align:middle;/*縦方向を中央揃え*/
+  text-align:center;/*横方向を中央揃え*/
+  }
+
+ .item {
+  margin-bottom: 20px;
+  margin-top: 20px;
+ }
+
+ .wrappergrid h2{
+  margin-top: 20px;
+ }
+
+ form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+  border: 1px solid #000000;
+  background-color: #000000;
+  width: 100%;
+  margin-top: 5px;
+  padding: 4px 8px;
+}
+
+  input[type="radio"],
+  input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  vertical-align: baseline;
+  margin-right: 4px;
+}
+  .attendRadio {
+  text-align: center;
+  margin-bottom: 40px;
+}
+  .attendRadio label {
+  margin: 0 20px;
+  font-size: 24px;
+}
+  .allergyCheck label {
+  margin-right: 24px;
+}
+
+ textarea {
+  height: 148px;
+  margin-bottom: 30px;
+}
+
+ form > p {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+ .submitBtn {
+  text-align: center;
+}
+
+ input[type="submit"] {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 18px 80px;
+}
+
+ footer {
+  background-color: hsl(0, 14%, 39%);
+  color: #f3e9e5;
+  padding: 14px 10px 20px;
+  text-align: center;
+}
+
+ .dateSec {
+  margin-bottom: 480px;
+}
+ 
+ .dateSec::after {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+ 
+ input[type="submit"]:hover {
+  background-color: #f80303;
+  margin-left: 20px;
+  transition-property: background-color,margin-left;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  transition-delay: 0ms;
+}
+
+@media screen and (max-width:640px) {
+
+  body{
+  max-width: 100%;
+  }
+
+  header {
+    max-width: 100%;
+    height: 110px;
+    margin-bottom: 20px;
+  }
+
+  .Link {
+   width: 80%;
+  }
+
+  nav ul Link{
+    padding: -100x;
+  }
+
+  .Link{
+    display:none
+  }
+
+   main .namecard img {
+    display: block;
+  }
+
+   main .PC img {
+    display: block;
+  }
+ 
+  .contact img{
+margin-top: 30px;
+  display: block;
+  }
+ 
+  .innerWrap {
+    display: block;
+  }
+
+  .innerWrap img{
+    width:50%;
+    height: 50%;  
+    display: block;
+       margin-bottom: 20px;
+    margin-top: 20px;
+  }
+   main Text{
+  font-size: 16px;
+  }
+
+  .innerWrap .Text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .innerWrap .Text h2 {
+    font-size: 20px;
+    font-weight: bold
+  }
+
+  .wrappergrid {
+    display: block;
+    margin: 0 auto;
+ }
+
+  main h2 {
+    font-size: 20px;
+    font-weight: bold
+  }
+
+  form {
+    width:350px;
+  }
+  form input[type=”text”] {
+      width:100%;
+      border: 2px solid #aaa;
+      padding:4px 10px;
+      margin:0;
+  }
+  form input[type=”submit”] {
+      width:100%;
+      margin:0;
+  }
+  main.menu{
+    margin-bottom: 0px;
+    max-width: 100%;
+  }
+  main.shopcard img{
+    margin-bottom: 0px;
+    width: 60%; 
+  }
+ main .namecard img{
+  margin-bottom: 0px;
+  width: 70%; 
+ }
+ .wrappergrid .item {
+  margin-bottom: 20px;
+  margin-top: 20px;
+ }
+ .wrappergrid .item img {
+  width: 75%;
+ }
+ .wrappergrid h2{
+  margin-top: 20px;
+ }
+ .menu img {
+  max-width: 100%;
+ }
+
+ ul{
+  flex-direction: column;
+ }
+ li{
+  margin-top: 30px;
+ }
+.shop{
+  margin-bottom:  50px;
+}
+.meishi{
+  margin-bottom:  50px;
+}
+}
