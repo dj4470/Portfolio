@@ -95,6 +95,11 @@ a {
   font-size: 30px;
   font-weight: bold
 } 
+main .SNS img {
+  width: 5%;
+  display: flex;
+  display: inline-block
+}
 
 .Link {
     display: flex;
@@ -240,7 +245,11 @@ text-align: center;
   .Link{
     display:none
   }
-
+   main .SNS img {
+  width: 10%;
+  display: flex;
+  display: inline-block
+}
    main .namecard img {
     display: block;
   }
@@ -332,9 +341,11 @@ margin-top: 30px;
 
  ul{
   flex-direction: column;
+  display: flex;
  }
  li{
   margin-top: 30px;
+  list-style: none;
  }
 .shop{
   margin-bottom:  50px;
